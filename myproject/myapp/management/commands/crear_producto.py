@@ -18,7 +18,7 @@ class Command(BaseCommand):
             producto = Producto(
                 nombre=fake.vehicle_make_model(),  # Genera un nombre de vehículo
                 descripcion=fake.sentence(nb_words=10),  # Genera una descripción corta
-                precio=fake.random_number(digits=4) / 100  # Para tener un precio decimal
+                precio=fake.random_number(digits=5) # Para tener un precio decimal
             )
             producto.save()
         print("Productos ficticios creados.")
